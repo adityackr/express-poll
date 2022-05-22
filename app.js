@@ -15,6 +15,8 @@ app.use(express.json());
 app.get('/create', pollController.createPollGetController);
 app.post('/create', pollController.createPollPostController);
 
+app.get('/polls/:id', pollController.viewPollGetController);
+app.post('/polls/:id', pollController.viewPollPostController);
 app.get('/polls', pollController.getAllPolls);
 
 app.get('/', (req, res) => {
