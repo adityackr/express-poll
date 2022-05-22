@@ -1,4 +1,4 @@
-const { Schema, trusted, model } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const pollSchema = new Schema({
 	title: {
